@@ -380,10 +380,6 @@ p {
   padding: 84px 0;
 }
 
-.methodology {
-  background-color: var(--orange-ligia);
-}
-
 .modalidades {
   background: linear-gradient(180deg, rgba(255,255,255,0.15), rgba(240,232,247,0.28));
 }
@@ -983,6 +979,10 @@ p {
   .faq,
   .cta-final {
     padding: 64px 0;
+  }
+
+  .differentials {
+    background-color: var(--orange-ligia);
   }
 
   .section-heading {
