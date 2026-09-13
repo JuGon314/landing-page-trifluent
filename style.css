@@ -474,6 +474,11 @@ p {
   max-width: 700px;
 }
 
+.article-copy p,
+.article-card p {
+  text-align: justify;
+}
+
 .article-copy .btn {
   margin-top: 18px;
 }
