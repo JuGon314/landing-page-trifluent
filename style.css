@@ -1,3 +1,5 @@
+@import url("https://fonts.bunny.net/css?family=jura:300,500");
+
 :root {
   --blush: #f6eeeb;
   --beige: #f4efe9;
@@ -31,7 +33,7 @@ html {
 
 body {
   font-family: "Inter", sans-serif;
-  background: linear-gradient(180deg, #fffdfc 0%, #f9f4f1 100%);
+  background: var(--orange-ligia);
   color: var(--text);
   line-height: 1.6;
   overflow-x: hidden;
@@ -1210,4 +1212,232 @@ p {
   .brand-name {
     font-size: 2rem;
   }
+}
+
+/* CSS scroll carousel demo */
+body {
+  background: var(--orange-ligia);
+  color: rgb(10 10 10);
+  min-height: 100svh;
+  margin: 0;
+  padding: 2rem;
+  font-family: "Jura", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+body > h1 {
+  margin: 0;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+body > h1 span {
+  font-weight: 300;
+}
+
+.msg-supports {
+  margin: -1rem 0 0;
+  font-size: 0.8rem;
+}
+
+@supports selector(::scroll-marker-group) {
+  .msg-supports {
+    display: none;
+  }
+}
+
+.carousel {
+  --nav-btn-size: 40px;
+  --nav-btn-bg: rgb(15 23 43);
+  --nav-marker-bg: rgb(15 23 43);
+  width: min(calc(100% - 2rem), 760px);
+  padding-block: 2rem;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 320px;
+  gap: 0;
+  anchor-name: --carousel;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  overscroll-behavior-x: contain;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  scroll-marker-group: after;
+}
+
+@supports not selector(::scroll-marker-group) {
+  .carousel {
+    gap: 1rem;
+  }
+}
+
+.carousel::before,
+.carousel::after {
+  content: "";
+}
+
+.carousel::scroll-marker-group {
+  position: absolute;
+  position-anchor: --carousel;
+  inline-size: min(90cqi, 400px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  gap: 0.25rem;
+  padding-block-start: 1rem;
+  top: anchor(bottom);
+  left: calc(anchor(left) - 10%);
+  right: calc(anchor(right) - 10%);
+}
+
+.carousel > div {
+  position: relative;
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+  container-type: scroll-state;
+  display: grid;
+  grid-template-areas: "card" "title" "desc";
+  text-align: center;
+}
+
+.carousel > div.scroll-start {
+  scroll-initial-target: nearest;
+}
+
+.carousel > div > h2 {
+  grid-area: title;
+  margin: 1rem 0 0;
+  font-size: 1.3rem;
+  white-space: nowrap;
+  transition: all 300ms ease-in-out;
+}
+
+.carousel > div > p {
+  grid-area: desc;
+  margin: 0;
+  white-space: nowrap;
+  transition: all 300ms ease-in-out;
+}
+
+.carousel > div > .text-card {
+  grid-area: card;
+  width: 400px;
+  min-height: 360px;
+  display: grid;
+  place-items: center;
+  padding: 1.5rem;
+  border: 1px solid rgb(15 23 43 / 0.12);
+  border-radius: 20px;
+  background: linear-gradient(
+    to top,
+    rgb(255 178 127 / 0.82) 0%,
+    rgb(255 235 220 / 0.78) 48%,
+    rgb(255 255 255 / 0.9) 100%
+  );
+  box-shadow: 0 10px 20px rgb(0 0 0 / 0.25);
+  color: rgb(15 23 43);
+  font-size: 0.9rem;
+  line-height: 1.45;
+  text-align: center;
+  transition: all 300ms ease-in-out;
+}
+
+@container not scroll-state(snapped: inline) {
+  .carousel > div > h2 {
+    scale: 0.5;
+    opacity: 0.5;
+    translate: 0 -100px;
+  }
+
+  .carousel > div > p {
+    scale: 0.5;
+    opacity: 0;
+  }
+
+  .carousel > div > .text-card {
+    scale: 0.5;
+    opacity: 0.5;
+  }
+}
+
+.carousel > div::scroll-marker {
+  content: " ";
+  height: 20px;
+  aspect-ratio: 1;
+  background-color: var(--nav-marker-bg);
+  border-radius: 50%;
+  transition: 150ms ease-in-out;
+  scale: 0.75;
+  opacity: 0.25;
+}
+
+.carousel > div::scroll-marker:target-current {
+  opacity: 1;
+  scale: 1;
+}
+
+.carousel > div::scroll-marker:where(:hover, :focus-visible) {
+  opacity: 1;
+}
+
+.carousel > div::scroll-marker:focus-visible {
+  outline: 1px dashed var(--nav-marker-bg);
+  outline-offset: 4px;
+}
+
+.carousel::scroll-button(*) {
+  position: absolute;
+  position-anchor: --carousel;
+  width: var(--nav-btn-size);
+  aspect-ratio: 1;
+  font: inherit;
+  background-color: var(--nav-btn-bg);
+  display: grid;
+  place-content: center;
+  color: #fff;
+  border: 0;
+  border-radius: 50%;
+  opacity: 0.7;
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
+}
+
+.carousel::scroll-button(inline-start) {
+  content: "❮";
+  left: calc(anchor(left) - var(--nav-btn-size));
+}
+
+.carousel::scroll-button(inline-end) {
+  content: "❯";
+  right: calc(anchor(right) - var(--nav-btn-size));
+}
+
+.carousel::scroll-button(*):not(:disabled):where(:hover, :focus-visible) {
+  opacity: 1;
+  scale: 1.1;
+}
+
+.carousel::scroll-button(*):disabled {
+  opacity: 0.25;
+  cursor: unset;
+}
+
+.eyebrow {
+    display: inline-block;
+    font-size: 0.76rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--rose-deep);
+    margin-bottom: 16px;
+}
+
+h2 {
+    font-size: clamp(2.3rem, 4vw, 3.4rem);
+    margin-bottom: 12px;
 }
