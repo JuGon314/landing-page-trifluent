@@ -748,12 +748,39 @@ p {
 }
 
 .testimonial-grid {
-  grid-template-columns: 1fr;
+  grid-template-columns: none;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(min(88vw, 420px), 1fr);
+  gap: 20px;
+  overflow-x: auto;
+  padding: 8px 4px 24px;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+  scrollbar-color: var(--rose) transparent;
 }
 
 .testimonial-card {
   background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(249,234,229,0.2));
   padding-top: 26px;
+  min-height: 100%;
+  position: relative;
+  scroll-snap-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.quote-mark {
+  color: var(--rose-deep);
+  font-family: "Cormorant Garamond", serif;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 0.55;
+  margin-bottom: 20px;
+}
+
+.testimonial-card .person {
+  margin-top: auto;
+  padding-top: 24px;
 }
 
 .person {
@@ -1079,7 +1106,7 @@ p {
   }
 
   .testimonial-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: none;
   }
 }
 
@@ -1175,7 +1202,7 @@ p {
   }
 
   .testimonial-grid {
-    grid-template-columns: repeat(3, minmax(240px, 1fr));
+    grid-template-columns: none;
   }
 }
 
