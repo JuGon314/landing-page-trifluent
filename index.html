@@ -1,65 +1,639 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
+    <meta
+      name="description"
+      content="Aulas de inglês para mulheres com foco em conversação, confiança e aprendizado prático. Aprenda em um ambiente acolhedor e personalizado."
+    />
+    <title>Tri3fluent</title>
+    <link rel="icon" type="image/jpeg" href="images/logo_trifluent.jpeg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="section-heading center">
-      <p class="eyebrow">Depoimentos</p>
-      <h2>Histórias que mostram a transformação real.</h2>
-    </div>
-    <p class="msg-supports">
-      Sorry, your browser doesn't support <code>::scroll-*</code>
-    </p>
+    <header class="site-header">
+      <div class="container nav">
+        <a href="#top" class="brand" aria-label="Voltar ao início">
+          <img class="brand-mark" src="images/logo_trifluent.jpeg" alt="Logo Tri3fluent" />
+          <span class="brand-name">Tri3fluent</span>
+        </a>
 
-    <section class="carousel" aria-label="Depoimentos de alunas">
-      <div class="scroll-start">
-        <h2>Cariny Francielly</h2>
-        <p>Psicóloga | N. Senhora da Glória - SE</p>
-        <div class="text-card">
-          “Para mim, aprender inglês parecia uma realidade distante. Comecei do zero e ainda estou nesse processo, mas tenho amado o método da teacher Lígia! Mais do que aprender a me comunicar em inglês, tenho aprendido a gramática e tudo o que envolve o idioma. Além disso, ela traz jogos, músicas e outras dinâmicas que tornam as aulas muito mais leves. 🥰”
+        <nav class="main-nav" aria-label="Menu principal">
+          <a href="#sobre">Sobre</a>
+          <a href="#modalidades">Modalidades</a>
+          <a href="#metodologia">Metodologia</a>
+          <a href="#artigos">Artigos</a>
+          <a href="#depoimentos">Depoimentos</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contato">Contato</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a class="btn btn-secondary" href="#faq">FAQ</a>
+          <a
+            class="btn btn-primary"
+            href="https://wa.me/5579999227029"
+            target="_blank"
+            rel="noopener"
+          >
+            Agendar
+          </a>
         </div>
       </div>
-      <div>
-        <h2>Juliana Gonçalves</h2>
-        <p>Software Engineer | Belo Horizonte - MG</p>
-        <div class="text-card">
-          “Aprender inglês era um sonho que parecia distante, mas com a teacher Lígia tudo se tornou possível! Ela ensina com tanto amor, paciência e dedicação que é impossível não sentir o carinho em tudo o que faz. Além de nos incentivar a acreditar que somos capazes, ela traz jogos, músicas e dinâmicas que tornam o aprendizado muito leve e completo, envolvendo gramática e comunicação. Sou muito feliz por aprender com ela e, sem dúvidas, é uma professora que faço questão de indicar e levar comigo nessa caminhada. ❤️🥰”
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Professora de inglês para mulheres</p>
+            <h1>Fale inglês com segurança, naturalidade e confiança.</h1>
+            <p class="lead">
+              Prazer! Seja bem-vindo(a)! Sou a Teacher Ligia Bastos, professora
+              de inglês licenciada em Letras-Inglês pela Estácio de Sá. Acredito
+              que aprender inglês não precisa ser cansativo ou baseado apenas em
+              gramática. Minha proposta é ensinar de forma moderna,
+              personalizada e focada na comunicação, para que você desenvolva
+              confiança para usar o idioma no dia a dia.
+            </p>
+
+            <div class="hero-actions">
+              <a
+                class="btn btn-primary"
+                href="https://wa.me/5579999227029"
+                target="_blank"
+                rel="noopener"
+              >
+                Agendar aula experimental
+              </a>
+              <a
+                class="btn btn-secondary"
+                href="https://wa.me/5579999227029"
+                target="_blank"
+                rel="noopener"
+              >
+                Falar no WhatsApp
+              </a>
+            </div>
+
+            <ul class="hero-points" aria-label="Benefícios principais">
+              <li>✓ Aulas personalizadas</li>
+              <li>✓ Foco em conversação</li>
+              <li>✓ Ambiente acolhedor</li>
+            </ul>
+          </div>
+
+          <div class="hero-visual" aria-label="Professora Lígia">
+            <div class="visual-card main-card">
+              <div class="portrait">
+                <img
+                  src="images/img_ligia_corpo_inteiro.jpeg"
+                  alt="Professora Lígia sorrindo"
+                  class="portrait-image"
+                />
+                <div class="portrait-glow"></div>
+              </div>
+              <div class="card-badge">
+                <span class="badge-title">Confiança</span>
+                <strong>100%</strong>
+              </div>
+            </div>
+
+            <div class="floating-card">
+              <div class="mini-label">Aulas online</div>
+              <strong>Flexíveis e práticas</strong>
+            </div>
+          </div>
         </div>
-      </div>
-      <div>
-        <h2>Raiany Marcelino</h2>
-        <p>Empresária | N. Senhora da Glória - SE</p>
-        <div class="text-card">
-          “Aprender inglês sempre foi um sonho para mim, e com Lígia esse sonho se tornou possível. Amo a forma como cada aula é personalizada, respeitando o ritmo e as dificuldades de cada aluna. Ela ensina com muito amor, paciência e dedicação, sempre nos incentivando a acreditar que somos capazes. É impossível não sentir o carinho que ela coloca em tudo o que faz. Sou muito feliz por aprender com ela e, sem dúvidas, é uma professora que faço questão de indicar e levar comigo nessa caminhada. ❤️”
+      </section>
+
+      <section class="benefits">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Por que aprender comigo</p>
+            <h2>Uma experiência de aprendizado leve, real e transformadora.</h2>
+          </div>
+
+          <div class="benefits-grid">
+            <article class="benefit-card">
+              <div class="icon-wrap">✦</div>
+              <h3>Aulas pensadas para você</h3>
+              <p>
+                Cada aula é adaptada ao seu nível, objetivo e rotina, sem
+                pressão, sem comparação e com foco no que realmente importa para
+                você.
+              </p>
+            </article>
+
+            <article class="benefit-card">
+              <div class="icon-wrap">◎</div>
+              <h3>Foco em comunicação real</h3>
+              <p>
+                Você aprende a se expressar de maneira natural, com segurança em
+                conversas do cotidiano, trabalho e viagens.
+              </p>
+            </article>
+
+            <article class="benefit-card">
+              <div class="icon-wrap">✧</div>
+              <h3>Ambiente acolhedor</h3>
+              <p>
+                Um espaço seguro, respeitoso e motivador para você evoluir no
+                seu ritmo, sem medo de errar e aprender com leveza.
+              </p>
+            </article>
+
+            <article class="benefit-card">
+              <div class="icon-wrap">❋</div>
+              <h3>Mais confiança para falar</h3>
+              <p>
+                O objetivo é que você saia das aulas mais confiante, clara e
+                preparada para agir com autonomia em qualquer situação.
+              </p>
+            </article>
+          </div>
         </div>
-      </div>
-      <div>
-        <h2>Luzi Rocha</h2>
-        <p>Engenheira Química | Aracaju - SE</p>
-        <div class="text-card">
-          "Mesmo com pouco mais de um mês, já estou gostando bastante das aulas. Acho que o que mais gosto é que são leves e dinâmicas, e todo mundo muito à vontade para participar e tirar dúvidas. As aulas também me ajudam a ter mais compromisso com os estudos e a perder um pouco o medo de falar inglês. ❤️💙💛"
+      </section>
+
+      <section id="sobre" class="about">
+        <div class="container about-grid">
+          <div class="about-visual">
+            <div class="about-photo">
+              <img
+                src="images/img_ligia_perfil_2.jpeg"
+                alt="Retrato da professora Lígia"
+                class="about-photo-image"
+              />
+            </div>
+          </div>
+
+          <div class="about-copy">
+            <p class="eyebrow">Sobre a professora</p>
+            <h2>Aprender inglês pode ser leve, real e transformador.</h2>
+            <p>
+              Cada aula é planejada de acordo com seus objetivos, seja para
+              viagens, carreira, estudos, entrevistas ou desenvolvimento pessoal.
+            </p>
+            <p>
+              O aprendizado acontece de forma estratégica, respeitando seu ritmo e
+              incentivando o uso prático do inglês desde o início. Meu compromisso
+              é tornar o processo de aprendizagem leve, organizado e eficiente,
+              ajudando cada aluno a evoluir com consistência e a perceber
+              resultados reais ao longo da jornada.
+            </p>
+
+            <ul class="check-list">
+              <li>Ensino moderno e focado em comunicação</li>
+              <li>Atendimento ajustado ao seu ritmo e objetivos</li>
+              <li>Ambiente acolhedor, prático e voltado para resultados reais</li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div>
-        <h2>Ana Paula Rufino</h2>
-        <p>Enfermeira | Rio de Janeiro</p>
-        <div class="text-card">
-          "Lígia é uma pessoa muito especial e uma excelente teacher! Suas aulas são dinâmicas, com bastante conversação. Sem perceber, a gente aprende várias coisas! O material que ela utiliza facilita bastante o aprendizado. Eu faço parte de uma turma de 3 pessoas. E é bem legal pq a gente interage o tempo todo. 💜🩵🧡"
+      </section>
+
+      <section id="modalidades" class="modalidades">
+        <div class="container">
+          <div class="section-heading center">
+            <p class="eyebrow">Modalidades</p>
+            <h2>Escolha a experiência que melhor combina com você.</h2>
+          </div>
+
+          <div class="modalidades-grid">
+            <article class="modalidade-card">
+              <h3>Turmas reduzidas</h3>
+              <p>
+                Aprenda em um ambiente colaborativo, mantendo atenção
+                individualizada e muita prática de conversação.
+              </p>
+              <ul class="check-list compact">
+                <li>Ambiente colaborativo e dinâmico</li>
+                <li>Prática constante de conversação</li>
+                <li>Excelente custo-benefício</li>
+              </ul>
+            </article>
+
+            <article class="modalidade-card">
+              <h3>Aula individual</h3>
+              <p>
+                Um plano totalmente personalizado, desenvolvido de acordo com seus
+                objetivos, ritmo de aprendizagem e necessidades.
+              </p>
+              <ul class="check-list compact">
+                <li>Atendimento exclusivo e focado em você</li>
+                <li>Conteúdo adaptado ao seu objetivo</li>
+                <li>Flexibilidade e acompanhamento personalizado</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="choice-box">
+            <h3>Qual modalidade devo escolher?</h3>
+            <div class="choice-columns">
+              <div>
+                <h4>Aula individual</h4>
+                <ul class="choice-list">
+                  <li>Plano de estudos personalizado</li>
+                  <li>Horário mais flexível</li>
+                  <li>Ritmo adaptado ao aluno</li>
+                </ul>
+              </div>
+
+              <div>
+                <h4>Turma reduzida</h4>
+                <ul class="choice-list">
+                  <li>Aprendizado colaborativo</li>
+                  <li>Mais oportunidades de interação em inglês</li>
+                  <li>Excelente custo-benefício</li>
+                  <li>Turmas pequenas para garantir atenção individual</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div>
-        <h2>Alessandra Medeiros</h2>
-        <p>Fisioterapeuta | Salvador - BA</p>
-        <div class="text-card">
-          "Eu achava que aprender inglês era decorar regras. Até conhecer uma metodologia que me fez entender o idioma de verdade.<br /><br />
-          As aulas são leves, práticas e fazem sentido para situações reais. Pela primeira vez, sinto que não estou apenas estudando inglês, estou realmente aprendendo a usar a língua.<br /><br />
-          A diferença está na metodologia. E você percebe isso desde as primeiras aulas. 🥰"
+      </section>
+
+      <section id="metodologia" class="methodology">
+        <div class="container">
+          <div class="section-heading center">
+            <p class="eyebrow">Metodologia</p>
+            <h2>Uma jornada progressiva e sem pressão.</h2>
+          </div>
+
+          <div class="method-grid">
+            <article class="method-card">
+              <span class="step">01</span>
+              <h3>Diagnóstico inicial</h3>
+              <p>Entendo seu nível, objetivos e dores para criar uma base forte.</p>
+            </article>
+
+            <article class="method-card">
+              <span class="step">02</span>
+              <h3>Plano personalizado</h3>
+              <p>Defino um caminho que combine ritmo, metas e prática real.</p>
+            </article>
+
+            <article class="method-card">
+              <span class="step">03</span>
+              <h3>Conversa e pronúncia</h3>
+              <p>Trabalhamos com fala, clareza, naturalidade e confiança.</p>
+            </article>
+
+            <article class="method-card">
+              <span class="step">04</span>
+              <h3>Acompanhamento contínuo</h3>
+              <p>Você evolui com orientação, correção e incentivo constante.</p>
+            </article>
+
+            <article class="method-card">
+              <span class="step">05</span>
+              <h3>Autonomia real</h3>
+              <p>Ao final, você se sente segura para usar o inglês no dia a dia.</p>
+            </article>
+          </div>
         </div>
+      </section>
+
+      <section id="depoimentos" class="testimonials">
+        <div class="container">
+          <div class="section-heading center">
+            <p class="eyebrow">Depoimentos</p>
+            <h2>Histórias que mostram a transformação real.</h2>
+          </div>
+
+          <p class="msg-supports">
+            Seu navegador não oferece suporte aos controles avançados do carrossel.
+          </p>
+
+          <div class="carousel" aria-label="Depoimentos de alunas">
+            <div class="scroll-start">
+              <h2>Cariny Francielly</h2>
+              <p>Psicóloga | N. Senhora da Glória - SE</p>
+              <div class="text-card">
+                “Para mim, aprender inglês parecia uma realidade distante. Comecei do zero e ainda estou nesse processo, mas tenho amado o método da teacher Lígia! Mais do que aprender a me comunicar em inglês, tenho aprendido a gramática e tudo o que envolve o idioma. Além disso, ela traz jogos, músicas e outras dinâmicas que tornam as aulas muito mais leves. 🥰”
+              </div>
+            </div>
+
+            <div>
+              <h2>Juliana Gonçalves</h2>
+              <p>Software Engineer | Belo Horizonte - MG</p>
+              <div class="text-card">
+                “Aprender inglês era um sonho que parecia distante, mas com a teacher Lígia tudo se tornou possível! Ela ensina com tanto amor, paciência e dedicação que é impossível não sentir o carinho em tudo o que faz. Além de nos incentivar a acreditar que somos capazes, ela traz jogos, músicas e dinâmicas que tornam o aprendizado muito leve e completo, envolvendo gramática e comunicação. Sou muito feliz por aprender com ela e, sem dúvidas, é uma professora que faço questão de indicar e levar comigo nessa caminhada. ❤️🥰”
+              </div>
+            </div>
+
+            <div>
+              <h2>Raiany Marcelino</h2>
+              <p>Empresária | N. Senhora da Glória - SE</p>
+              <div class="text-card">
+                “Aprender inglês sempre foi um sonho para mim, e com Lígia esse sonho se tornou possível. Amo a forma como cada aula é personalizada, respeitando o ritmo e as dificuldades de cada aluna. Ela ensina com muito amor, paciência e dedicação, sempre nos incentivando a acreditar que somos capazes. É impossível não sentir o carinho que ela coloca em tudo o que faz. Sou muito feliz por aprender com ela e, sem dúvidas, é uma professora que faço questão de indicar e levar comigo nessa caminhada. ❤️”
+              </div>
+            </div>
+
+            <div>
+              <h2>Luzi Rocha</h2>
+              <p>Engenheira Química | Aracaju - SE</p>
+              <div class="text-card">
+                “Mesmo com pouco mais de um mês, já estou gostando bastante das aulas. Acho que o que mais gosto é que são leves e dinâmicas, e todo mundo muito à vontade para participar e tirar dúvidas. As aulas também me ajudam a ter mais compromisso com os estudos e a perder um pouco o medo de falar inglês. ❤️💙💛”
+              </div>
+            </div>
+
+            <div>
+              <h2>Ana Paula Rufino</h2>
+              <p>Enfermeira | Rio de Janeiro</p>
+              <div class="text-card">
+                “Lígia é uma pessoa muito especial e uma excelente teacher! Suas aulas são dinâmicas, com bastante conversação. Sem perceber, a gente aprende várias coisas! O material que ela utiliza facilita bastante o aprendizado. Eu faço parte de uma turma de 3 pessoas. E é bem legal pq a gente interage o tempo todo. 💜🩵🧡”
+              </div>
+            </div>
+
+            <div>
+              <h2>Alessandra Medeiros</h2>
+              <p>Fisioterapeuta | Salvador - BA</p>
+              <div class="text-card">
+                “Eu achava que aprender inglês era decorar regras. Até conhecer uma metodologia que me fez entender o idioma de verdade.<br /><br />As aulas são leves, práticas e fazem sentido para situações reais. Pela primeira vez, sinto que não estou apenas estudando inglês, estou realmente aprendendo a usar a língua.<br /><br />A diferença está na metodologia. E você percebe isso desde as primeiras aulas. 🥰”
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="artigos" class="articles">
+        <div class="container article-layout">
+          <div class="article-content">
+            <div class="article-copy">
+              <p class="eyebrow">Tradução Especializada</p>
+              <h2 style="font-size: 2rem; font-weight: 700;">Escrever bem em inglês também revela maturidade e clareza.</h2>
+              <h3>PT-BR → EN | EN → PT-BR</h3>
+              <p>
+                Tradução especializada para resumos de TCC, abstracts, artigos
+                científicos e trabalhos acadêmicos.
+              </p>
+              <p>
+                Seu conteúdo traduzido com precisão, naturalidade e linguagem adequada ao
+                contexto acadêmico, preservando a essência e a qualidade do seu trabalho.
+              </p>
+              <p>
+                Do português para o inglês, com profissionalismo em cada palavra.
+              </p>
+              <a
+                class="btn btn-primary"
+                href="https://drive.google.com/file/u/0/d/1Jw8iIWG2gNEWfzTEZ-qoSAu8oWsO3EVU/view"
+                target="_blank"
+                rel="noopener"
+              >
+                Ler artigo
+              </a>
+            </div>
+
+            <div class="article-card" aria-label="Artigo em inglês da professora">
+              <span class="article-tag">Escrita em Inglês</span>
+              <h3>Tradução científica com precisão e confiabilidade</h3>
+              <p>
+                Conte com um serviço especializado para traduzir seu artigo com clareza, rigor e segurança. A professora possui Mestrado em Biotecnologia Industrial, formação que proporciona amplo domínio da linguagem, estrutura e terminologia de artigos científicos.
+                Sua experiência acadêmica também abrange as áreas de Saúde, tecnologia, e ciência permitindo compreender o conteúdo com precisão e adaptar a tradução ao contexto específico de cada pesquisa.
+              O resultado é um texto fiel ao original, tecnicamente adequado e natural no idioma de destino, preservando o sentido, a terminologia e a qualidade acadêmica do seu trabalho.
+              </p>
+            </div>
+          </div>
+
+          <div class="article-visual" aria-label="Print do artigo em inglês da professora">
+            <img
+              src="images/captura_artigo_ligia.png"
+              alt="Print do artigo desenvolvido pela professora Lígia"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="differentials">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Diferenciais</p>
+            <h2>Mais do que aulas: uma experiência de crescimento.</h2>
+          </div>
+
+          <div class="differentials-grid">
+            <article class="diff-card">
+              <h3>Ensino humanizado</h3>
+              <p>Você é tratada com atenção, acolhimento e respeito ao seu ritmo.</p>
+            </article>
+
+            <article class="diff-card">
+              <h3>Comunicação real</h3>
+              <p>Foco em usar o inglês com naturalidade em situações do cotidiano.</p>
+            </article>
+
+            <article class="diff-card">
+              <h3>Flexibilidade</h3>
+              <p>Aulas online com horários que se encaixam na sua rotina.</p>
+            </article>
+
+            <article class="diff-card">
+              <h3>Confiança em ação</h3>
+              <p>Você aprende a falar sem medo e com muito mais clareza.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="faq">
+        <div class="container faq-box">
+          <div class="section-heading">
+            <p class="eyebrow">FAQ</p>
+            <h2>Perguntas frequentes.</h2>
+          </div>
+
+          <div class="faq-list">
+            <details open>
+              <summary>Preciso ter base em inglês para começar?</summary>
+              <p>
+                Não! 💛 As aulas se adaptam ao seu nível — do zero à conversação — e também ajudam a construir uma base sólida.
+              </p>
+            </details>
+
+            <details>
+              <summary>As aulas são individuais?</summary>
+              <p>
+                Você pode escolher entre duas modalidades: aulas individuais ou aulas em turma, para você escolher o formato que mais combina com seus objetivos e sua rotina.
+              </p>
+            </details>
+
+            <details>
+              <summary>O foco é gramática ou conversa?</summary>
+              <p>
+                O foco principal é a comunicação real, mas a gramática é
+                trabalhada de forma natural e aplicada ao contexto da sua rotina.
+              </p>
+            </details>
+
+            <details>
+              <summary>As aulas são online?</summary>
+              <p>
+                Sim! 💻✨ Inglês de onde estiver, no seu ritmo e com a praticidade que a sua rotina precisa. Temos alunas de várias partes do Brasil.
+              </p>
+            </details>
+
+            <details>
+              <summary>Posso aprender inglês para trabalho e vida pessoal?</summary>
+              <p>
+                Claro. O conteúdo pode ser adaptado para carreira, viagens, estudo,
+                networking e desenvolvimento pessoal.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="socials">
+        <div class="container social-grid">
+          <div class="social-copy">
+            <p class="eyebrow">Conecte-se</p>
+            <h2>Confira mais sobre a jornada, ideias e conteúdos da Tri3fluent.</h2>
+            <p>
+              Aqui você encontra inspiração, reflexões e dicas sobre inglês,
+              comunicação, autoestima e desenvolvimento pessoal — tudo com um
+              olhar acolhedor e prático para mulheres que querem evoluir com
+              confiança.
+            </p>
+          </div>
+
+          <div class="social-links" aria-label="Redes sociais da professora">
+            <a
+              class="social-card"
+              href="https://www.linkedin.com/in/ligiabastos19/"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="social-icon flaticon-icon" aria-label="LinkedIn">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
+                  alt="Ícone do LinkedIn"
+                />
+              </span>
+              <div>
+                <strong>LinkedIn</strong>
+                <small>/in/ligiabastos19</small>
+              </div>
+            </a>
+
+            <a
+              class="social-card"
+              href="https://www.instagram.com/tri3fluent/"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="social-icon flaticon-icon" aria-label="Instagram">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
+                  alt="Ícone do Instagram"
+                />
+              </span>
+              <div>
+                <strong>Instagram</strong>
+                <small>@tri3fluent</small>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="contato" class="cta-final">
+        <div class="container cta-box">
+          <div class="cta-copy">
+            <p class="eyebrow">Próxima etapa</p>
+            <h2>Quer começar sua jornada com mais confiança?</h2>
+            <p>
+              Agende uma conversa inicial e descubra o melhor caminho para você
+              evoluir no inglês com acolhimento, estratégia e apoio real.
+            </p>
+          </div>
+
+          <div class="cta-actions">
+            <a
+              class="btn btn-primary"
+              href="https://wa.me/5579999227029"
+              target="_blank"
+              rel="noopener"
+            >
+              Quero começar agora
+            </a>
+            <a
+              class="btn btn-secondary light"
+              href="https://wa.me/5579999227029"
+              target="_blank"
+              rel="noopener"
+            >
+              Falar no WhatsApp
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="socials">
+        <div class="container social-grid">
+          <div class="social-copy">
+            <p class="eyebrow">Conecte-se</p>
+            <h2>Confira mais sobre a jornada, ideias e conteúdos da Tri3fluent.</h2>
+            <p>
+              Aqui você encontra inspiração, reflexões e dicas sobre inglês,
+              comunicação, autoestima e desenvolvimento pessoal — tudo com um
+              olhar acolhedor e prático para mulheres que querem evoluir com
+              confiança.
+            </p>
+          </div>
+
+          <div class="social-links" aria-label="Redes sociais da professora">
+            <a
+              class="social-card"
+              href="https://www.linkedin.com/in/ligiabastos19/"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="social-icon flaticon-icon" aria-label="LinkedIn">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
+                  alt="Ícone do LinkedIn"
+                />
+              </span>
+              <div>
+                <strong>LinkedIn</strong>
+                <small>/in/ligiabastos19</small>
+              </div>
+            </a>
+
+            <a
+              class="social-card"
+              href="https://www.instagram.com/tri3fluent/"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="social-icon flaticon-icon" aria-label="Instagram">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
+                  alt="Ícone do Instagram"
+                />
+              </span>
+              <div>
+                <strong>Instagram</strong>
+                <small>@tri3fluent</small>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© 2026 Tri3fluent | Professora de inglês para mulheres</p>
+        <a href="https://wa.me/5579999227029" target="_blank" rel="noopener">WhatsApp</a>
       </div>
-    </section>
+    </footer>
   </body>
 </html>
